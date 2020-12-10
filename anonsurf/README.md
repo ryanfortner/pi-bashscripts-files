@@ -2,6 +2,8 @@
 Execute this one command into your command prompt or terminal.
 ```bash
 sudo wget -O install.sh https://git.io/JIVFS
+```
+
 ## Usage
 ### Pandora
 Pandora automatically overwrites the RAM when the system is shutting down. Pandora can also be ran manually:
