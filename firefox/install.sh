@@ -7,7 +7,8 @@ echo "deb http://ports.ubuntu.com/ubuntu-ports bionic-updates main" | sudo tee /
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 
 # Add preferences so the ubuntu repositories don't become your "default" repositories
-sudo echo "Package: *
+sudo su
+echo "Package: *
 Pin: release a=bionic-updates
 Pin-Priority: 1" > /etc/apt/preferences.d/99bionic-updates
 
