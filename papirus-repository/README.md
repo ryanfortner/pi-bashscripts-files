@@ -1,5 +1,6 @@
 # Papirus repository installer
-This will install the papirus team's PPA, accessible from [this page](https://launchpad.net/~papirus/+archive/ubuntu/papirus)
+This will install the papirus team's PPA, accessible from [this page](https://launchpad.net/~papirus/+archive/ubuntu/papirus).
+
 Type this command into a terminal:
 ```
 wget -qO- https://git.io/JLDpL | bash
