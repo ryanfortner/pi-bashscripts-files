@@ -9,5 +9,10 @@ wget -qO- https://bit.ly/2JnzEst | bash
 ```
 You can find Stacer in Menu > Accessories > Stacer.
 
+## Uninstallation
+```
+sudo apt purge stacer -y
+```
+
 ## ***Known Issues***
 total amount of RAM is not displayed properly. If you have any suggestions on how to fix this please create an issue, if you already found a solution please send a pull request, thank you!
