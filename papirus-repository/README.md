@@ -7,4 +7,4 @@ wget -qO- https://git.io/JLDpL | bash
 sudo apt-get install papirus-icon-theme -y
 ```
 
-With this installed you can now install the latest Papirus Icon Theme because the package on the Raspberry Pi repositories are outdated.
+With this you can now install the latest Papirus Icon Theme because the package on the Raspberry Pi repositories are outdated.
