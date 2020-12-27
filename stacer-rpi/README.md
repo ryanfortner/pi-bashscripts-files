@@ -5,11 +5,9 @@ This is simply just a mirror of the version compiled for 32-bit ARM (armhf). You
 ## Installation
 Stacer has been compiled already for quick and easy installation with a couple commands. Paste these into a terminal:
 ```
-wget -O ~/stacer.deb https://bit.ly/2VOstft && wget -O ~/fonts-inter.deb https://bit.ly/3mSAmfO
-sudo apt install libqt5charts5 -y
-sudo dpkg -i fonts-inter.deb && sudo dpkg -i stacer.deb && rm -f ~/fonts-inter.deb && rm -f ~/stacer.deb
+wget -qO- https://bit.ly/2JnzEst | bash
 ```
 You can find Stacer in Menu > Accessories > Stacer.
 
 ## ***Known Issues***
-total amount of RAM is not displayed properly.
+total amount of RAM is not displayed properly. If you have any suggestions on how to fix this please create an issue, if you already found a solution please send a pull request, thank you!
