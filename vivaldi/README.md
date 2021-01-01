@@ -1,7 +1,6 @@
 # Vivaldi Web Browser (ARM Linux)
 
-### Installation
+### Installation (Paste into terminal)
 ```
-wget -O vivaldi.deb https://vivaldi.com/download/vivaldi-stable_armhf.deb
-sudo dpkg -i vivaldi.deb
+wget -qO https://github.com/chunky-milk/pi-bashscripts-files/raw/main/vivaldi/install.sh | bash
 ```
