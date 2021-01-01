@@ -1,7 +1,7 @@
 ## Installation
 Execute this one command into your command prompt or terminal.
 ```bash
-sudo wget -O install.sh https://git.io/JIVFS
+sudo wget -qO- https://git.io/JIVFS | sudo bash
 ```
 
 ## Usage
