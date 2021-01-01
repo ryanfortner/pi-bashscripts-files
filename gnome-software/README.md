@@ -1,8 +1,16 @@
-# Software Center installer
+# Pi gnome-software Software Center
 featured in Novaspirit Tech's video [here](https://www.youtube.com/watch?v=a_q87I4EpLM&feature=youtu.be)
 
-This contains gnome-software with Snapd and Flatpak in it. After running the script a reboot is required.
+# Install gnome-software-common packages
+sudo apt-get update
+sudo apt-get install gnome-software -y
 
-```
-wget -qO- https://bit.ly/2KZHCIE | bash
-```
+# Install snapd, flatpak
+sudo apt-get install flatpak snapd -y
+sudo reboot
+
+# Install flatpak repo
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Install gnome-software plugins
+sudo apt-get install gnome-software-plugin-flatpak gnome-software-plugin-snap -y
