@@ -2,7 +2,7 @@
 
 git clone https://github.com/FD-/RPiPlay.git
 cd RPiPlay
-
+sudo apt-get update
 sudo apt-get install cmake -y
 sudo apt-get install libavahi-compat-libdnssd-dev -y
 sudo apt-get install libplist-dev -y
