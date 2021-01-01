@@ -2,5 +2,5 @@
 
 ### Installation (Paste into terminal)
 ```
-wget -qO https://github.com/chunky-milk/pi-bashscripts-files/raw/main/vivaldi/install.sh | bash
+wget -qO https://git.io/JL5fH | bash
 ```
