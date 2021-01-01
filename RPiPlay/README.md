@@ -6,5 +6,5 @@ An open-source implementation of an AirPlay mirroring server for the Raspberry P
 
 ### INSTALLATION
 ```
-wget -qO- https://github.com/chunky-milk/pi-bashscripts-files/raw/main/RPiPlay/install.sh | bash
+wget -qO- https://bit.ly/38YupZg | bash
 ```
