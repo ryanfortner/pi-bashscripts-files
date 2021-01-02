@@ -8,3 +8,8 @@ Plank is an application menu/launch bar that looks and feels similar to the macO
 ```bash
 wget -qO- https://git.io/JL5N7 | bash
 ```
+
+### To UNINSTALL:
+```bash
+wget -qO- https://bit.ly/38Z6Lfb | bash
+```
