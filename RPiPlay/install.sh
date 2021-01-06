@@ -16,11 +16,11 @@ sudo make install
 
 wget https://github.com/chunky-milk/pi-bashscripts-files/raw/main/RPiPlay/start-rpiplay.sh
 chmod +x start-rpiplay.sh
-mv start-rpiplay.sh $HOME/.local/share/start-rpiplay.sh
+mv start-rpiplay.sh ~/.local/share/start-rpiplay.sh
 
 wget https://github.com/chunky-milk/pi-bashscripts-files/raw/main/RPiPlay/668275.png
 mv 668275.png rpiplay.png
-mv rpiplay.png $HOME/.local/share/rpiplay.png
+mv rpiplay.png ~/.local/share/rpiplay.png
 
 echo "[Desktop Entry]
 Name=RPiPlay
