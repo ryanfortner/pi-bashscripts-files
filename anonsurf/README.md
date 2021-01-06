@@ -1,7 +1,9 @@
 ## Installation
-Execute this one command into your command prompt or terminal.
+Execute these commands into your command prompt or terminal.
 ```bash
-sudo wget -qO- https://git.io/JIVFS | sudo bash
+wget https://raw.githubusercontent.com/chunky-milk/anonsurf-arm/main/installer.sh
+sudo chmod +x installer.sh
+sudo ./installer.sh
 ```
 
 ## Usage
