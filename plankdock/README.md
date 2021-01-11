@@ -9,6 +9,15 @@ Plank is an application menu/launch bar that looks and feels similar to the macO
 wget -qO- https://git.io/JL5N7 | bash
 ```
 
+### To install themes:
+https://github.com/kennyh7279/plank-themes.git
+```
+git clone https://github.com/kennyh7279/plank-themes.git
+cd plank-themes && chmod +x install.sh
+./install.sh
+```
+
+
 ### To UNINSTALL:
 ```bash
 wget -qO- https://bit.ly/38Z6Lfb | bash
