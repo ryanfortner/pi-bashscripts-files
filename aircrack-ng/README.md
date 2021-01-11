@@ -11,7 +11,7 @@ sudo ./install.sh
 sudo apt-get update
 sudo apt-get install libssl-dev subversion iw libnl-dev macchanger sqlite3 reaver -y
 sudo apt-get install libnl-3-dev libnl-genl-3-dev -y
-wget http://download.aircrack-ng.org/aircrack-ng-1.2-rc4.tar.gz
+wget https://github.com/chunky-milk/pi-bashscripts-files/raw/main/aircrack-ng/aircrack-ng-1.2-rc4.tar.gz
 sudo tar xzvf aircrack-ng-1.2-rc4.tar.gz
 sudo mv aircrack-ng-1.2-rc4 aircrack-ng
 cd aircrack-ng 
