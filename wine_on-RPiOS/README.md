@@ -40,7 +40,7 @@ sudo cp winetricks /usr/local/bin
 ### winetricks needs this installed
 ```
 sudo apt-get install cabextract -y 
-``
+```
 
 ### Run Winetricks
 ```
