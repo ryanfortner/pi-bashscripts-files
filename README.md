@@ -1,0 +1,9 @@
+# pi-bashscripts-files
+A collection of Bash scripts and files useful for the Raspberry Pi 4 and others.
+
+Please note that all of these scripts were tested on a Raspberry Pi 4 running Raspberry Pi OS (32 bit) off of a 16 GB SanDisk MicroSD card.
+Using any other operating system may result in unexpected installation failures or may break your system, so if not using RPiOS 32bit, **you're on you're own.***
+
+### installation files and such
+I have organized everything into folders. Some folders may have install scripts, some may have packages, or links, or something else. Only use this repository if you know what you're doing.
+I'm not responsible for anything YOU do to YOUR system.
