@@ -2,6 +2,7 @@
 ## Raspberry Pi Projects and More on [YouTube](https://www.youtube.com/channel/UCkv0fW0EIUTKw6pYEnTjTbQ)
 https://docs.google.com/document/d/1XtbqjCTOfGtsyspwCBwishfb9LrJaeWjDng0Crwq9Eg/edit
 
+### Download/install Box86 using [pi-apps](https://github.com/Botspot/pi-apps#pi-apps---)
 ### Download Wine
 ```
 cd ~/Downloads
