@@ -1,7 +1,6 @@
 # Google Earth
-This is a Google Earth web app using its web interface.
+Google Earth is an an application which allows you to view the entire Earth.
 
-### Installation
-```bash
-wget -qO- https://github.com/chunky-milk/pi-bashscripts-files/raw/main/google-earth/install.sh | bash
-```
+Since Google Earth Pro is not compatible with arm architectures I have created a web application for it.
+
+Download and unzip the zipfile inside this repository. Then, run the 'GoogleEarth' executable file within it.
