@@ -1,13 +1,13 @@
-# Credit:
-## Raspberry Pi Projects and More on [YouTube](https://www.youtube.com/channel/UCkv0fW0EIUTKw6pYEnTjTbQ)
+### Credit: Raspberry Pi Projects and More on [YouTube](https://www.youtube.com/channel/UCkv0fW0EIUTKw6pYEnTjTbQ)
 https://docs.google.com/document/d/1XtbqjCTOfGtsyspwCBwishfb9LrJaeWjDng0Crwq9Eg/edit
 
 ### Download/install Box86 using [pi-apps](https://github.com/Botspot/pi-apps#pi-apps---)
+
 ### Download Wine
 ```
 cd ~/Downloads
 wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-devel-i386_5.21~buster_i386.deb
-wget https://dl.winehq.org/wine-builds/debian/dists/buster/main/binary-i386/wine-devel_5.21~buster_i386.deb
+wget https://github.com/chunky-milk/pi-bashscripts-files/raw/main/wine_on-RPiOS/wine-devel_5.21%7Ebuster_i386.deb
 dpkg-deb -xv wine-devel-i386_5.21~buster_i386.deb wine-installer
 dpkg-deb -xv wine-devel_5.21~buster_i386.deb wine-installer
 ```
