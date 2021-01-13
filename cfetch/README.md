@@ -4,6 +4,7 @@
  ```
  # Git clone the repo then go to the cfetch directory
 git clone https://github.com/clieg/cfetch.git
+cd cfetch
 
 # Compile cfetch
 make compile
