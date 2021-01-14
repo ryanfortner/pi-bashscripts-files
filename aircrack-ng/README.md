@@ -1,10 +1,4 @@
 # [Compile aircrack-ng on Raspberry Pi](https://raspberrypihell.blogspot.com/2014/01/aircrack-ng-on-raspberry-pi.html)
-### Original script (featured in the "other" menu in [piKiss](https://github.com/jmcerrejon/pikiss)).
-```
-wget https://raw.githubusercontent.com/txt3rob/Aircrack-NG_RaspberryPI/master/install.sh
-sudo chmod 777 install.sh
-sudo ./install.sh
-```
 
 ### Compilation instructions
 ```
@@ -20,4 +14,12 @@ sudo make install
 sudo airodump-ng-oui-update
 cd scripts
 sudo make install
+```
+
+### Original script (featured in the "other" menu in [piKiss](https://github.com/jmcerrejon/pikiss)).
+These instructions may become outdated.
+```
+wget https://raw.githubusercontent.com/txt3rob/Aircrack-NG_RaspberryPI/master/install.sh
+sudo chmod 777 install.sh
+sudo ./install.sh
 ```
