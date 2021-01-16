@@ -4,15 +4,15 @@ Fast and friendly network scanner
 
 ### Features
 
-    Scans local networks as well as Internet
-    IP Range, Random or file in any format
-    Exports results into many formats
-    Extensible with many data fetchers
-    Provides command-line interface
-    Over 29 million downloads
-    Free and open-source
-    Works on Windows, Mac and Linux
-    Installation not required
+   - Scans local networks as well as Internet
+   - IP Range, Random or file in any format
+   - Exports results into many formats
+   - Extensible with many data fetchers
+   - Provides command-line interface
+   - Over 29 million downloads
+   - Free and open-source
+   - Works on Windows, Mac and Linux
+   - Installation not required
 
 ### Installation
 ```
