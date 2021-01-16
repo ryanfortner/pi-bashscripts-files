@@ -31,3 +31,8 @@ if you want to remove the dependencies as well run this command:
 ```
 sudo apt purge openjdk-11-jdk rpm fakeroot -y
 ```
+
+
+### screenshots
+
+![angryipscannerrpi.png](https://github.com/Itai-Nelken/pi-bashscripts-files/blob/main/angry-ip-scanner/screenshots/angryipscannerrpi.png)
