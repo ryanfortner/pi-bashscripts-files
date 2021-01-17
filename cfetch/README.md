@@ -1,23 +1,15 @@
 # cfetch
  A simple system information tool for Linux. 
  
+ ### Installation:
  ```
- # Git clone the repo then go to the cfetch directory
-git clone https://github.com/clieg/cfetch.git
-cd cfetch
+wget -qO- https://git.io/JtkgU | bash
+ ```
 
-# Compile cfetch
-make compile
-
-# Install cfetch
-sudo make install
-
-# Run cfetch
-cfetch
-
-# Manpage
-man cfetch
-
-# Uninstall cfetch
-sudo make uninstall
+### Uninstallation:
 ```
+wget -qO- https://git.io/JtkgI | bash
+```
+
+### Screenshots:
+
