@@ -18,8 +18,8 @@ cd aircrack-ng
 #compile
 read -p "are you on a pi 4 (answer no if you have an older model) (y/n)?" choice
 case "$choice" in 
-  y|Y ) make -j4;;
-  n|N ) make;;
+  y|Y ) make -j4 ;;
+  n|N ) make ;;
   * ) echo "invalid";;
 esac
 echo "installing..."
