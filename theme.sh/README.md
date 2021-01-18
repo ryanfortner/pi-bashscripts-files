@@ -1,5 +1,12 @@
 # theme.sh
-https://github.com/lemnos/theme.sh
+One theme script to rule them all.
+
+### Features
+
+ - 270+ preloaded themes.
+ - Works on any terminal with OSC 4/11 support (e.g kitty, osx term)
+ - Small, self contained and POSIX compliant.
+ - Interactive theme selection (requires [fzf](https://github.com/junegunn/fzf))
 
 ### Installation
 ```
