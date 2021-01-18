@@ -1,0 +1,10 @@
+# Conky Manager 
+Conky Manager is a graphical front-end for managing Conky config files. It provides options to start/stop, browse and edit Conky themes installed on the system.
+
+### Installation
+```
+wget 
+```
+
+### Uninstallation
+```sudo apt purge conky-manager```
