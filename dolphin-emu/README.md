@@ -4,7 +4,7 @@
  ### Installation
  ```
  sudo apt-get install cmake -y
- git clone https://github.com/dolphin-emu/dolphin
+ git clone https://github.com/dolphin-emu/dolphin && cd dolphin
  mkdir build && cd build
  cmake ..
  make
