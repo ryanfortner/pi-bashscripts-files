@@ -14,6 +14,7 @@ sudo make install
 sudo airodump-ng-oui-update
 cd scripts
 sudo make install
+rm aircrack-ng-1.2-rc4.tar.gz
 ```
 
 ### Original script (featured in the "other" menu in [piKiss](https://github.com/jmcerrejon/pikiss)).
