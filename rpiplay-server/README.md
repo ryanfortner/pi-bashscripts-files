@@ -9,10 +9,7 @@ An open-source implementation of an AirPlay mirroring server for the Raspberry P
 git clone https://github.com/FD-/RPiPlay.git
 cd RPiPlay
 sudo apt-get update
-sudo apt-get install cmake -y
-sudo apt-get install libavahi-compat-libdnssd-dev -y
-sudo apt-get install libplist-dev -y
-sudo apt-get install libssl-dev -y
+sudo apt-get install cmake libavahi-compat-libdnssd-dev libplist-dev  libssl-dev -y
 
 mkdir build
 cd build
