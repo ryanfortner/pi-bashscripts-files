@@ -7,3 +7,46 @@ Using any other operating system may result in unexpected installation failures 
 
 ### installation files and such
 I have organized everything into folders. Some folders may have install scripts, some may have packages, or links, or something else. Only use this repository if you know what you're doing.
+
+
+### To add to [pi-apps](https://github.com/Botspot/pi-apps/):
+
+These are the scripts i'm working on adding to botspot's Pi apps project. If you would like to help me with them, awesome! just message me: @chunkymilk0309#3309 on discord.
+
+Alacritty https://github.com/chunky-milk/pi-bashscripts-files/tree/main/alacritty
+
+Bleachbit https://github.com/chunky-milk/pi-bashscripts-files/tree/main/bleachbit
+
+conky manager https://github.com/chunky-milk/pi-bashscripts-files/tree/main/conky-manager
+
+dolphin emu https://github.com/chunky-milk/pi-bashscripts-files/tree/main/dolphin-emu
+
+dosbox x https://github.com/chunky-milk/pi-bashscripts-files/tree/main/dosbox-x
+
+Duckstation https://github.com/chunky-milk/pi-bashscripts-files/tree/main/duckstation
+
+freetube https://github.com/chunky-milk/pi-bashscripts-files/tree/main/freetube
+
+googleearth https://github.com/chunky-milk/pi-bashscripts-files/tree/main/google-earth
+
+lutris game manager https://github.com/chunky-milk/pi-bashscripts-files/tree/main/lutris
+
+megasync https://github.com/chunky-milk/pi-bashscripts-files/tree/main/megasync
+
+obs studio https://github.com/chunky-milk/pi-bashscripts-files/tree/main/obs-studio
+
+openscad https://github.com/chunky-milk/pi-bashscripts-files/tree/main/openscad
+
+panther launcher https://github.com/chunky-milk/pi-bashscripts-files/tree/main/panther_launcher
+
+photogimp https://github.com/chunky-milk/pi-bashscripts-files/tree/main/photogimp (in progress)
+
+ppsspp https://github.com/chunky-milk/pi-bashscripts-files/tree/main/ppsspp
+
+remmina https://github.com/chunky-milk/pi-bashscripts-files/tree/main/remmina
+
+stacer https://github.com/chunky-milk/pi-bashscripts-files/tree/main/stacer-rpi
+
+teamviewer https://github.com/chunky-milk/pi-bashscripts-files/tree/main/teamviewer
+
+vscodium https://github.com/chunky-milk/pi-bashscripts-files/tree/main/vscodium
