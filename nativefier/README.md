@@ -4,7 +4,7 @@ https://github.com/jiahaog/nativefier
 ### Installation
 
 ```
-sudo apt install node.js npm imagemagick -y
+sudo apt install npm imagemagick -y
 sudo npm install -g nativefier
 ```
 
