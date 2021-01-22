@@ -13,3 +13,8 @@ make
 sudo make install
 ```
 Or, if you want the .deb file:
+```
+wget https://github.com/chunky-milk/pi-bashscripts-files/raw/main/panther_launcher/panther-launcher_armhf.deb
+sudo apt --fix-broken -y ./panther-launcher_armhf.deb
+rm panther-launcher_armhf.deb
+```
