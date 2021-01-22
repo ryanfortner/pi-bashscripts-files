@@ -13,4 +13,6 @@ cmake ..
 make -j4
 ```
 
-The output will be in ~/nitroshare-desktop/build/out
+The output will be in ```~/nitroshare-desktop/build/out```.
+
+**PLease note that if you run ```make install``` it will break the application.**
