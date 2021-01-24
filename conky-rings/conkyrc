@@ -77,5 +77,5 @@ ${goto 330}${top_mem name 5}${alignr 15}${top_mem mem 5}%
 ${voffset 5}${goto 348}SWAP${alignr 15}${swap} / ${swapmax}
 ${voffset 4}${goto 348}${mem} / ${memmax}
 # VERSION
-${voffset 10}${goto 320}${execi 86400 twistver}
+${voffset 10}${goto 320}${execi 86400 printver-conkyrings}
 ]]
