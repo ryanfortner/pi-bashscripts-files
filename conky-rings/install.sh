@@ -3,6 +3,10 @@
 sudo apt-get update
 sudo apt install conky-all lua50 -y
 
+wget https://github.com/chunky-milk/pi-bashscripts-files/raw/main/conky-rings/printver-conkyrings
+chmod +x printver-conkyrings
+sudo mv printver-conkyrings /usr/bin/
+
 mkdir install-conky && cd install-conky
 
 wget -O ~/.conkyrc https://github.com/chunky-milk/pi-bashscripts-files/raw/main/conky-rings/conkyrc
