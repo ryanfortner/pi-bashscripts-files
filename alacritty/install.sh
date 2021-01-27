@@ -11,4 +11,4 @@ Path=$HOME/alacritty/
 Icon=$HOME/alacritty/icon.png
 Type=Application
 Comment=Alacritty is the fastest terminal emulator in existence. Using the GPU for rendering enables optimizations that simply aren't possible without it.
-Categories=ConsoleOnly;Utility;System; > ~/.local/share/applications/alacritty.desktop
+Categories=ConsoleOnly;Utility;System;" > ~/.local/share/applications/alacritty.desktop
