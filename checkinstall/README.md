@@ -1,7 +1,8 @@
-https://github.com/opencv/opencv/issues/8897
+## Installation (works on armhf and arm64):
 ```
-sudo apt-get update && sudo apt-get install checkinstall -y
-git clone https://github.com/giuliomoro/checkinstall
-cd checkinstall
-sudo make install
+wget -qO- https://raw.githubusercontent.com/chunky-milk/pi-bashscripts-files/main/checkinstall/install.sh | bash
+```
+## Uninstallation:
+```
+wget -qO- https://raw.githubusercontent.com/chunky-milk/pi-bashscripts-files/main/checkinstall/uninstall.sh | bash
 ```
