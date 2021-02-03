@@ -1,0 +1,6 @@
+#/usr/bin/bash
+if [ ! -f SetupATpi.sh ];then
+wget -nv https://raw.githubusercontent.com/pi-dev500/MinecraftMicrosoftPILauncher/main/setupATpi.sh || exit 1
+fi
+./SetupATpi.sh || exit 1
+rm -f SetupATpi.sh

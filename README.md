@@ -5,11 +5,11 @@ Please note that all of these scripts were tested on a Raspberry Pi 4 running Ra
 
 Using any other operating system may result in unexpected installation failures or may break your system, so if not using RPiOS 32bit, **be prepared for failures.**
 
-### installation files and such
+## installation files and such
 I have organized everything into folders. Some folders may have install scripts, some may have packages, or links, or something else. Only use this repository if you know what you're doing.
 
 
-### To add to [pi-apps](https://github.com/Botspot/pi-apps/):
+## To add to [pi-apps](https://github.com/Botspot/pi-apps/):
 
 These are the scripts i'm working on adding to botspot's Pi apps project. If you would like to help me with them, awesome! just message me: @chunkymilk0309#3309 on discord.
 
@@ -50,3 +50,18 @@ stacer https://github.com/chunky-milk/pi-bashscripts-files/tree/main/stacer-rpi
 teamviewer https://github.com/chunky-milk/pi-bashscripts-files/tree/main/teamviewer
 
 vscodium https://github.com/chunky-milk/pi-bashscripts-files/tree/main/vscodium
+
+## other useless stuff
+
+### Headless Raspberry Pi setup
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+
+network={
+ ssid="wifiuname"
+ psk="wifipass"
+}
+```
+create blank file called ```ssh``` with no filename extension in the ```boot``` partition.
