@@ -2,24 +2,12 @@
  A simple system information tool for Linux.  
  ### Installation:
  ```
-wget -qO- https://git.io/JtkgU | bash
+wget -O ~/cfetch.deb https://github.com/chunky-milk/pi-bashscripts-files/raw/main/cfetch/cfetch_20210127-1_armhf.deb
+sudo dpkg -i ~/cfetch.deb
  ```
 
 ### Uninstallation:
 ```
-wget -qO- https://git.io/JtkgI | bash
+sudo apt purge cfetch
 ```
 
-### Screenshots:
-
- ### Installation:
- ```
-wget -qO- https://git.io/JtkgU | bash
- ```
-
-### Uninstallation:
-```
-wget -qO- https://git.io/JtkgI | bash
-```
-
-### Screenshots:
