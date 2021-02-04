@@ -1,4 +1,4 @@
 #/usr/bin/bash
-wget -nv https://raw.githubusercontent.com/pi-dev500/MinecraftMicrosoftPILauncher/main/setupATpi.sh || exit 1
+wget -qO- https://raw.githubusercontent.com/pi-dev500/MinecraftMicrosoftPILauncher/main/setupATpi.sh | bash || exit 1
 
 
