@@ -3,7 +3,7 @@
 
 ### Installation (32bit)
 ```
-wget -O ~/gh-cli_armhf.deb https://github.com/cli/cli/releases/download/v1.4.0/gh_1.4.0_linux_armv6.deb
+wget -O ~/gh-cli_armhf.deb https://github.com/cli/cli/releases/download/v1.5.0/gh_1.5.0_linux_armv6.deb
 sudo apt -f -y install ~/gh-cli_armhf.deb
 rm ~/gh-cli_armhf.deb
 ```
