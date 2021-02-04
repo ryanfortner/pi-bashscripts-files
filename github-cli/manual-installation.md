@@ -20,3 +20,5 @@ armv6 and arm64 binaries available [here](https://github.com/cli/cli/releases/la
 ```
 sudo apt purge -y gh
 ```
+
+## [back to gh readme](https://github.com/Itai-Nelken/pi-bashscripts-files/tree/main/github-cli#github-cli)
