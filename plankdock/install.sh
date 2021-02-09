@@ -6,7 +6,7 @@ sudo apt-get install plank compton -y
 
 # copy Plank to autostart on boot
 cd ~/.config
-mkdir autostart
+mkdir -p autostart
 cd autostart
 sudo cp /usr/share/applications/plank.desktop ~/.config/autostart
 sudo chmod +x plank.desktop
