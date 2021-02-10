@@ -1,7 +1,10 @@
 # DuckStation
 https://github.com/stenzek/duckstation#building
 
-### Installation
+### Installation (Precompiled)
+https://github.com/chunky-milk/duckstation-rpi
+
+### Installation (Compile)
 ```
 sudo apt-get install libsdl2-dev libgtk-3-dev cmake pkg-config qtbase5-dev qtbase5-private-dev qtbase5-dev-tools qttools5-dev git ninja-build -y
 cd ~/
