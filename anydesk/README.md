@@ -3,12 +3,10 @@ AnyDesk is the ultimate remote desktop solution for editing and maintaining a de
 
 ### Installation
 ```
-wget https://download.anydesk.com/rpi/anydesk_6.0.1-1_armhf.deb
-sudo apt --fix-broken -y install ./anydesk_6.0.1-1_armhf.deb
-rm anydesk_6.0.1-1_armhf.deb
+wget -qO- https://git.io/Jtu7H | bash
 ```
 
 ### Uninstallation
 ```
-sudo apt purge anydesk -y
+wget -qO- https://git.io/Jtu77 | bash
 ```

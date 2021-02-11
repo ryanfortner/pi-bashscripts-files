@@ -1,9 +1,12 @@
 # FreeTube
-https://flathub.org/apps/details/io.freetubeapp.FreeTube
+https://freetubeapp.io
 
-### Installation
+## Installation:
+```bash
+wget -qO- https://raw.githubusercontent.com/chunky-milk/pi-bashscripts-files/main/freetube/install.sh
 ```
-sudo apt-get install flatpak -y
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y io.freetubeapp.FreeTube
+## Uninstallation:
+```bash
+wget -qO- https://raw.githubusercontent.com/chunky-milk/pi-bashscripts-files/main/freetube/uninstall.sh
 ```
+or run `sudo apt purge freetube -y`

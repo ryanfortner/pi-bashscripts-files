@@ -1,0 +1,3 @@
+#make Programing language bar show only shell
+* linguist-vendored
+*.sh linguist-vendored=false
