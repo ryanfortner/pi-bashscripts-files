@@ -1,4 +1,4 @@
-# FreeCAD 0.18.4
+# FreeCAD 0.18.5
 a free and opensource multiplatform 3D parametric modeler. Issues are managed on our own bug tracker at https://www.freecadweb.org/tracker
 
 Guide for the RPi4:
