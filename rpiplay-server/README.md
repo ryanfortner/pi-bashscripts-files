@@ -10,7 +10,7 @@ sudo apt-get update
 sudo apt-get install cmake libavahi-compat-libdnssd-dev libplist-dev  libssl-dev -y
 
 wget -O ~/rpiplay.deb https://github.com/chunky-milk/pi-bashscripts-files/raw/main/rpiplay-server/rpiplay_20210203-1_armhf.deb
-sudo dpkg -i rpiplay.deb
+sudo dpkg -i rpiplay.deb && rm rpiplay.deb
 
 # Run RPiPlay server
 rpiplay
