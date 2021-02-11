@@ -16,12 +16,14 @@ else
   echo -e "$(tput setaf 1)$(tput bold)Can't detect OS architecture! something is very wrong!$(tput sgr 0)"
   exit
 fi
+
 cd $HOME
+
 if [[ "$ARCH" == 32 ]]; then
-  wget https://archive.org/download/freetube_0.11.1_armv7l/freetube_0.11.1_armv7l.deb -O ~/freetube_armhf.deb
+  wget https://archive.org/download/freetube_0.11.2_armv7l/freetube_0.11.2_armv7l.deb -O ~/freetube_armhf.deb
   sudo apt -f -y install ~/freetube_armhf.deb
   rm -f ~/freetube_armhf.deb
 elif [[ "$ARCH" == 64 ]]; then
-  wget https://github.com/FreeTubeApp/FreeTube/releases/download/v0.11.1-beta/freetube_0.11.1_arm64.deb -O ~/freetube_arm64.deb
+  wget https://github.com/FreeTubeApp/FreeTube/releases/download/v0.11.2-beta/freetube_0.11.2_arm64.deb -O ~/freetube_arm64.deb
   sudo apt -f -y install ~/freetube_arm64.deb
 fi
