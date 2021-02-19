@@ -4,7 +4,7 @@ https://gitlab.com/jallbrit/cbonsai
 Simple installation (precompiled)
 ```
 sudo apt-get install libncurses-dev -y
-wget -O cbonsai.deb https://github.com/chunky-milk/pi-bashscripts-files/raw/main/cbonsai/cbonsai_20210211-1_armhf.deb
+wget -O cbonsai.deb https://github.com/chunky-milk/pi-bashscripts-files/raw/main/cbonsai/cbonsai_20210219-1_armhf.deb
 sudo apt --fix-broken -y install ./cbonsai.deb
 rm cbonsai.deb
 ```
