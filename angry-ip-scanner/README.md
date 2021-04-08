@@ -19,7 +19,7 @@ Fast and friendly network scanner
 cd ~
 wget -qO- https://git.io/JtkzQ | bash
 ```
-you can now delete the .deb file the regular way or using this command in terminal: `rm ~/ipscan*.deb`.
+You can now delete the deb file using GUI file browser or using this command in terminal: `rm ~/ipscan*.deb`.
 
 ### Uninstallation
 ```
