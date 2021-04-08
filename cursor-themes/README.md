@@ -1,6 +1,6 @@
-# Linux addon cursor themes (RPiOS)
+# Linux add cursor themes (RPiOS)
 
-### Installation (Whole system)
+### Installation (Whole System)
 ```bash
 git clone https://github.com/chunky-milk/cursor-themes.git
 sudo apt-get install xcursor-themes
