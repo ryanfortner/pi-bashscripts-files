@@ -1,7 +1,7 @@
 # DuckStation
 https://github.com/stenzek/duckstation#building
 
-### Installation (Precompiled)
+### Installation (Pre-compiled)
 https://github.com/chunky-milk/duckstation-rpi
 
 ### Installation (Compile)
