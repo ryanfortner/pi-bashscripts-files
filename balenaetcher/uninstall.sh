@@ -4,6 +4,7 @@
 # script by Itai-Nelken - https://github.com/Itai-Nelken #
 ##########################################################
 
-echo "uninstalling BalenaEtcher..."
+echo "Uninstalling Balena Etcher..."
+sleep 0.3
 sudo apt purge -y balena-etcher-electron
 echo "DONE!"

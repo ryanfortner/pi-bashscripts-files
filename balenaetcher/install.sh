@@ -5,7 +5,7 @@
 # etcher compiled and packaged also by Itai-Nelken       #
 ##########################################################
 
-echo "installing balenaetcher..."
+echo "Installing BalenaEtcher..."
 
 #functions
 function download_latest_release_armhf() {
