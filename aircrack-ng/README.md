@@ -18,7 +18,7 @@ rm aircrack-ng-1.2-rc4.tar.gz
 ```
 
 ### Original script (featured in the "other" menu in [piKiss](https://github.com/jmcerrejon/pikiss)).
-These instructions may become outdated.
+These instructions may become outdated at some point.
 ```
 wget https://raw.githubusercontent.com/txt3rob/Aircrack-NG_RaspberryPI/master/install.sh
 sudo chmod 777 install.sh

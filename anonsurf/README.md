@@ -13,16 +13,16 @@ pandora bomb
 
 NOTE: This will clear the entire system cache, including active SSH tunnels or sessions.
 
-### anonsurf
+### Anonsurf
 Anonsurf will anonymize the entire system under the tor network using IPTables. It will also allow you to start and stop i2p as well.
 
-NOTE: DO NOT run this as ```service anonsurf $COMMAND```. Run this as ```anonsurf $COMMAND```
+NOTE: Do NOT run this as ```service anonsurf $COMMAND```. Run this as ```anonsurf $COMMAND```
 
 ```bash
 Usage:
  anonsurf {start|stop|restart|change|status}
 
- start - Start system-wide anonymous
+ start - Starstartit system-wide anonymous
           tunneling under TOR proxy through iptables
  stop - Reset original iptables settings
           and return to clear navigation
