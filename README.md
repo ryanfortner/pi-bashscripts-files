@@ -25,17 +25,12 @@ Dosbox x https://github.com/chunky-milk/pi-bashscripts-files/tree/main/dosbox-x
 
 Duckstation https://github.com/chunky-milk/pi-bashscripts-files/tree/main/duckstation
 
-Freetube https://github.com/chunky-milk/pi-bashscripts-files/tree/main/freetube
-
 Google Earth https://github.com/chunky-milk/pi-bashscripts-files/tree/main/google-earth
 
 Lutris game manager https://github.com/chunky-milk/pi-bashscripts-files/tree/main/lutris
 
 Megasync https://github.com/chunky-milk/pi-bashscripts-files/tree/main/megasync
 
-OBS Studio https://github.com/chunky-milk/pi-bashscripts-files/tree/main/obs-studio
-
-Openscad https://github.com/chunky-milk/pi-bashscripts-files/tree/main/openscad
 
 Panther launcher https://github.com/chunky-milk/pi-bashscripts-files/tree/main/panther_launcher
 
@@ -48,9 +43,6 @@ Remmina https://github.com/chunky-milk/pi-bashscripts-files/tree/main/remmina
 Stacer https://github.com/chunky-milk/pi-bashscripts-files/tree/main/stacer-rpi
 
 Teamviewer https://github.com/chunky-milk/pi-bashscripts-files/tree/main/teamviewer
-
-VSCodium https://github.com/chunky-milk/pi-bashscripts-files/tree/main/vscodium
-
 ## Other Useful Stuff
 
 ### Headless Raspberry Pi Setup
