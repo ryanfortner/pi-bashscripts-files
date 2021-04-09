@@ -4,5 +4,5 @@
 # script by Itai-Nelken - https://github.com/Itai-Nelken #
 ##########################################################
 
-echo "uninstalling anydesk..."
+echo "Uninstalling Anydesk..."
 sudo apt purge anydesk -y

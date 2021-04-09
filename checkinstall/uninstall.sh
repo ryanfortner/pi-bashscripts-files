@@ -4,5 +4,5 @@
 # script by Itai-Nelken - https://github.com/Itai-Nelken #
 ##########################################################
 
-echo "uninstalling checkinstall..."
+echo "Uninstalling checkinstall..."
 sudo apt purge checkinstall -y

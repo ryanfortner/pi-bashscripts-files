@@ -4,7 +4,7 @@
 # script by Itai-Nelken - https://github.com/Itai-Nelken #
 ##########################################################
 
-echo "installing cfetch..."
+echo "Installing cfetch..."
 cd $HOME
 # Git clone the repo then go to the cfetch directory
 git clone https://github.com/clieg/cfetch.git

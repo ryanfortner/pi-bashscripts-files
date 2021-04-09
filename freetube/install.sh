@@ -5,7 +5,7 @@
 # armhf deb compiled by phoenixbyrd - http://github.com/phoenixbyrd/ #
 ######################################################################
 
-echo "installing freetube..."
+echo "Installing freetube."
 
 #determine if host system is 64 bit arm64 or 32 bit armhf
 if [ ! -z "$(file "$(readlink -f "/sbin/init")" | grep 64)" ];then

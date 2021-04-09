@@ -4,6 +4,6 @@
 # script by Itai-Nelken - https://github.com/Itai-Nelken #
 ##########################################################
 
-echo "uninstalling bleachbit..."
+echo "Uninstalling bleachbit..."
 
 sudo apt purge bleachbit -y

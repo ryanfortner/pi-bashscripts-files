@@ -4,6 +4,8 @@
 # script by Itai-Nelken - https://github.com/Itai-Nelken #
 ##########################################################
 
-echo "uninstalling Github-CLI..."
+echo "Uninstalling Github-CLI."
 sudo apt purge -y gh
 echo "DONE!"
+sleep 3
+exit

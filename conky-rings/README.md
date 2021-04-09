@@ -1,5 +1,5 @@
 # conky-rings
-This is an alternative script to the conky in [pi-apps](https://github.com/Botspot/pi-apps)
+This is an alternate script to the conky in [pi-apps](https://github.com/Botspot/pi-apps)
 
 ### Installation
 https://github.com/chunky-milk/conky-rpi

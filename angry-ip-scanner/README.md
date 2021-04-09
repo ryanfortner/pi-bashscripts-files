@@ -16,15 +16,16 @@ Fast and friendly network scanner
 
 ### Installation
 ```
+cd ~
 wget -qO- https://git.io/JtkzQ | bash
 ```
-you can now delete the .deb file the regullar way or using this command in terminal: `rm ~/ipscan*.deb`.
+You can now delete the deb file using GUI file browser or using this command in terminal: `rm ~/ipscan*.deb`.
 
 ### Uninstallation
 ```
 wget -qO- https://git.io/Jtkzd | bash
 ```
 
-### screenshots
+### Screenshots
 
 ![angryipscannerrpi.png](https://github.com/Itai-Nelken/pi-bashscripts-files/blob/main/angry-ip-scanner/screenshots/angryipscannerrpi.png)

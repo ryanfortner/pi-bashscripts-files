@@ -9,15 +9,15 @@ sudo apt --fix-broken -y install ./cbonsai.deb
 rm cbonsai.deb
 ```
 
-To compile:
+### To compile:
 ```
 sudo apt-get install libncurses-dev apt-transport-https wget -y
 git clone https://gitlab.com/jallbrit/cbonsai
 cd cbonsai
 
-# install for this user
+# Install for this user
 make install PREFIX=~/.local
 
-# install for all users
+# Install for all users
 sudo make install
 ```
