@@ -1,7 +1,0 @@
-Minecraft Java edition for the raspberry pi
-To maximize performance and to get solid 60fps, please follow ETA Prime's excellent walkthrough video: https://www.youtube.com/watch?v=oqNWJ52DLes
-To run: Menu -> Games -> ATlauncher
-To run in a terminal: java -jar $HOME/.local/share/ATlauncher/jarfile/launcher.jar
-
-I (pi-dev500) have configured the install script to create a custom ATLauncher.json so you don't have to change settings manually.
-

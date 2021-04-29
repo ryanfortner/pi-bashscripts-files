@@ -1,4 +1,0 @@
-#/usr/bin/bash
-wget -qO- https://raw.githubusercontent.com/pi-dev500/MinecraftMicrosoftPILauncher/main/setupATpi.sh | bash || exit 1
-
-

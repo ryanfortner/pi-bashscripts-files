@@ -1,0 +1,3 @@
+Package: *
+Pin: release a=bionic-updates
+Pin-Priority: 1
