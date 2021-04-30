@@ -29,16 +29,22 @@ Also tested on arm64 / aarch64 Ubuntu 16.04 / 19.10
 sudo apt-get install -y git python gcc g++ make libx11-dev libxkbfile-dev fakeroot rpm libsecret-1-dev jq python2.7-dev python-pip python-setuptools libudev-dev
 sudo apt-get install ruby-dev
 sudo gem install fpm -v 1.10.2 --no-document #note: must be v1.10.2 NOT v1.11.0
-#install NodeJS
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
+#Install nvm manager:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash || error "Failed to install nvm!"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#patch nvm script to forcibly use armhf
+sed -i 's/^  nvm_echo "${NVM_ARCH}"/  NVM_ARCH=armv7l ; nvm_echo "${NVM_ARCH}"/g' "$NVM_DIR/nvm.sh"
+#Install NodeJS:
+nvm install --lts
 ```
 
 2. Clone Repo and Checkout Release . 
 ```
 git clone --recursive https://github.com/balena-io/etcher
 cd etcher
-git checkout v1.5.63
+git checkout v1.5.118
 ```
 
 3. Install Requirements  
@@ -73,7 +79,7 @@ USE_SYSTEM_FPM="true" make electron-build
 ```
 #  *.deb package will be in /etcher/dist/*
 # filename will depend on which release version was checked out
-sudo apt-get install ./dist/balena-etcher-electron_1.5.63+a1558116_armv7l.deb 
+sudo apt-get install ./dist/balena-etcher-electron_1.5.118+a1558116_armv7l.deb 
 ```
 Note: You can ignore the `chmod: cannot access '/opt/balenaEtcher/chrome-sandbox': No such file or directory` warning. It is caused by the `postinst` file and is only relevant for electron versions 5+.
 
