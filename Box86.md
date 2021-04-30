@@ -5,6 +5,11 @@ Linux Userspace x86 emulator (with a twist) ;)
 
 Box86 lets you run x86 Linux programs (such as games) on non-x86 Linux systems, like ARM (host system needs to be 32bit little-endian).
 
+# Easy method- install via Pi-Apps
+[![badge](https://github.com/Botspot/pi-apps/blob/master/icons/badge.png?raw=true)](https://github.com/Botspot/pi-apps)  
+Thanks to @Itai-Nelken's daily Box86 builds, you can install Box86 as a deb file
+
+### Compiling
 *a build for model 2, 3 and 4 can be done. Model 1 and 0 cannot (at least not with Dynarec, as they lack NEON support)*
 
 ```
