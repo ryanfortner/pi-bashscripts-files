@@ -54,6 +54,7 @@ pip install -r requirements.txt
 
 4. Setup and Install NPM Modules . 
 ```
+export NODE_OPTIONS="--max-old-space-size=3072"
 make electron-develop
 ``` 
 At this point you should be able to run a test of Etcher with -
