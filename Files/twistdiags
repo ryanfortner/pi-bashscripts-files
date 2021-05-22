@@ -1,0 +1,290 @@
+#!/bin/bash
+clear
+glxgears="$(command -v glxgears)"
+libs="$(ldd "${glxgears?}"|grep libGL.so.1|cut -c2-)"
+link="$(readlink $libs)"
+
+model="$(tr -d '\0' </proc/device-tree/model)"
+box86="$(box86 | head -1)"
+wget -q --spider https://github.com/ptitseb/box86.git
+if [ $? -eq 0 ]; then
+    commit=$(git ls-remote https://github.com/ptitseb/box86.git/|grep -c "$(box86|head -qn1|awk '{ print $5}')")
+else
+    commit=You are OFFLINE
+fi
+
+kernel="$(uname -rm)"
+wine="$($(command -v wine) --version|sed -e 6b -e '$!d')"
+prefix="$(file -b ~/.wine/drive_c/windows/explorer.exe)"
+winelink="$(file "$(command -v wine)"| awk '{ print $2,$5,$6,$7}')"
+printf "\\e[3;4;37mSummary of your environment\\n\\e[0m"
+echo ""
+
+
+if [ -z "$box86" ]
+    then
+        echo -e ["\\e[1m\\e[3mBox86 does not work!\\e[0m\\e[0m"]
+    else
+        echo -e ["\\e[1m\\e[3m$box86\\e[0m\\e[0m"]
+        
+        echo ""
+fi
+
+if [ ! -f ~/gl4es/libGL.so.1 ]; then
+         echo "          "'GL4ES not found!'
+    else echo "          "'GL4ES found'
+    
+fi
+
+if [ ! -f /proc/sys/fs/binfmt_misc/x86 ]; 
+    then 
+        echo "          "Binfmt-magic present: No
+    else 
+        echo "          "Binfmt-magic present: Yes
+        echo "          ""$(sed '2q;d' /proc/sys/fs/binfmt_misc/x86)"
+fi
+
+if [[ "$commit" == "0" ]]; then echo "          "Latest commit:"$(git ls-remote https://github.com/ptitseb/box86.git/|head -qn1|awk '{print $1;}')"
+                                tput setaf 1
+                                echo "          "'Box86 is out of date. If you are having issues,'
+                                echo "          "'consider updating Box86 using: Menu > Games > UPDATE BOX86'
+                                tput sgr0
+                                elif [[ "$commit" == "2" ]]; then echo "          ""Box86 is up to date"
+                                                           else
+                                                           echo "          ""You are $commit"
+                                                           fi 
+
+echo ""
+
+if [ ! -f /usr/bin/glxinfo ]; 
+    then 
+        echo -e ["\\e[1m\\e[3mMesa-utils not present!\\e[0m\\e[0m"]
+        echo ""
+    else 
+        
+        echo ""
+        echo -e ["\\e[1m\\e[3m$(glxinfo -B| grep "OpenGL version")\\e[0m\\e[0m"]
+        echo ""
+        echo "          ""$(glxinfo -B| grep vendor)" 
+        echo "          ""$(glxinfo -B| grep direct)"
+        echo "          "Linked to "$link"
+                
+echo ""
+fi
+echo ""
+echo -e ["\\e[1m\\e[3m$model\\e[0m\\e[0m"]
+echo ""
+if [ ! -f /usr/local/bin/twistver ]; 
+    then 
+    echo "          ""$(hostnamectl|grep "Operating System:")"
+    else
+    echo "          ""You are on ""$(twistver)" 
+    
+fi
+
+echo "          ""Kernel:""$kernel"
+echo "          "It has "$(free -h -m --si| awk '{ print $7}'|sed '/^$/d')" 'of free ram.'
+echo ""
+#check for wine
+if [ ! -f  "$(command -v wine)" ];
+    then 
+    echo -e ["\\e[1m\\e[3mWine not found!\\e[0m\\e[0m"]
+    else
+    if [ -z "$wine" ]
+    then
+      echo -e ["\\e[1m\\e[3mWine does not work!\\e[0m\\e[0m"]
+    echo ""
+    else
+      echo -e ["\\e[1m\\e[3m$wine\\e[0m\\e[0m"]
+    echo ""
+    echo "          "linked with: "$(command -v wine)"
+    
+    fi   
+    
+fi
+
+#check wine-prefix
+
+if [ ! -f ~/.wine/drive_c/windows/explorer.exe ]; 
+    then 
+    echo "          "Prefix not found!
+    else 
+    echo "          ""linktype"'=>' "$winelink"
+    echo "          ""Prefix:""$prefix"
+if [ -d ~/.wine/drive_c/windows/mono ];
+    then echo "          "Found "$(ls ~/.wine/drive_c/windows/mono)"
+    else echo "          "Mono not found.
+    fi
+fi
+
+    
+#check Winetricks
+
+if [ ! -f /usr/local/bin/winetricks ]; 
+    then 
+    echo "          "Winetricks not found!
+    else 
+    winetricks=$(winetricks --version|head -c 8)
+    echo "          "Found Winetricks "$winetricks"
+fi
+
+#check for Mesa (with fix)
+
+if [ ! -f /usr/bin/glxinfo ]; then
+    echo ""
+    echo    '################################################'
+    echo    "# Mesa-utils not found!                        #"
+    echo    '################################################'    
+    echo ""
+    read -p "Would you like to install it? (y/N)" -n 1 -r -s
+    echo ""    
+    if ! [[ $REPLY =~ ^[Yy]$ ]]; then
+echo ""
+echo    "          "'#################################################'
+echo    "          ""#   Not installing mesa-utils. Exiting.         #" 
+echo    "          "'#################################################'
+echo ""        
+exit 0
+    else
+sudo apt install mesa-utils -y
+echo ""
+echo    "          "'#################################################'
+echo    "          ""# Mesa-utils installed. Restarting twistenv.    #" 
+echo    "          "'#################################################'
+exec "$0"
+
+
+    exit 0
+    fi
+fi
+#check for box86 (with fix)
+if [ ! -f /usr/local/bin/box86 ]; then
+    echo ""
+    echo "###########################"
+    echo "# Box86 not found!        #"
+    echo "###########################"
+    echo ""
+    read -p "Would you like to install it (y/N)" -n 1 -r -s
+	echo ""
+	if ! [[ $REPLY =~ ^[Yy]$ ]]; then
+        echo ""
+        echo '      ''###########################################'
+        echo '      ''# Not installing Box86. You will not be   #'
+        echo '      ''# able to run x86 software!               #'
+        echo '      ''# CAUTION: This is unsupported            #'
+        echo '      ''###########################################'
+        echo ""
+    else 
+        echo ""
+        echo "          "'#####################################'
+        echo "          "'# Fetching Box86 from archive.org   #' 
+        echo "          "'# The project is also available at: #'
+        echo "          "'# https://github.com/ptitSeb/box86  #'
+        echo "          "'#####################################'
+        echo ""
+        wget https://archive.org/download/box86.7z_20200928/box86.tar.xz -O "$HOME"/box86.tar.xz
+        sudo tar -xf box86.tar.xz -C /
+        if [ ! -d "$HOME"/Box86 ]; then
+        sudo mv /src "$HOME"/Box86
+        fi
+        rm "$HOME"/box86.tar.xz
+        exec "$0"
+  
+  fi
+fi
+#check for wine-x86 (with fix)
+if [ ! -d ~/wine/ ]; then
+    echo ""
+    echo "###########################"
+    echo "# Wine-x86 not found!     #"
+    echo "###########################"
+    echo ""
+    read -p "Would you like to install it (y/N)" -n 1 -r -s
+	echo ""
+	if ! [[ $REPLY =~ ^[Yy]$ ]]; then
+        echo ""
+        echo '      ''###########################################'
+        echo '      ''# Not installing wine-x86. Box86 will not #'
+        echo '      ''# able to run Win32 programms             #'
+        echo '      ''###########################################'
+        echo ""
+    else 
+        echo ""
+        echo "          "'###################################'
+        echo "          "'# Fetching Wine-x86 from          #' 
+        echo "          "'# http://www.twisteros.com        #'
+        echo "          "'###################################'
+        echo ""
+        wget http://www.twisteros.com/wine.tgz -O "$HOME"/wine.tgz
+        tar zxvf "$HOME"/wine.tgz -C "$HOME"/
+        rm "$HOME"/wine.tgz
+        exec "$0"
+  
+    fi
+fi
+
+#check for qemu-user-static (with fix)
+
+if [[ $(sudo dpkg-query -l| grep -c qemu-user-static) == "1" ]]; then
+
+
+    echo ""
+    echo '      ''#################################################'
+    echo '      ''# Qemu-user-static found! This is known to      #'
+    echo '      ''# cause problems with the binary redirection of #'
+    echo '      ''# Box86! Therefore it needs its full path to be #'
+    echo '      ''# specified in order to run.                    #'
+    echo '      ''#################################################'
+    echo ""
+    read -p "Would you like to remove it (y/N)" -n 1 -r -s
+	echo ""
+	if ! [[ $REPLY =~ ^[Yy]$ ]]; then
+        echo ""
+        echo '      ''#################################################'
+        echo '      ''# Leaving qemu-user-static as it is.            #'
+        echo '      ''#################################################'
+        echo ""
+    else 
+        sudo dpkg --purge --force-all qemu-user-static
+        echo ""
+        echo "          "'##################################'
+        echo "          "'# Removed qemu-user-static       #'
+        echo "          "'##################################'
+        exec "$0"
+        fi  
+fi
+
+
+#check libgl link (with fix)
+
+if [[ $link == "libGL.so.1.7.0" ]]; then
+
+
+
+echo ""
+echo '###############################################'
+echo "# Your libgl.so.1 is linked to $link #"
+echo '# This is known to cause problems.            #' 
+echo '###############################################'
+echo ""
+read -p "Would you like to relink to libgl.so.1.2.0 (y/N)" -n 1 -r -s
+
+	if ! [[ $REPLY =~ ^[Yy]$ ]]; then
+echo ""
+echo "          ""##################################################"
+echo "          ""# Okay, leaving link to $link as it is  #"
+echo "          ""##################################################"
+echo ""
+read -r -p "Press [Enter] to exit."     
+        exit 1;
+	fi
+        sudo rm /usr/lib/arm-linux-gnueabihf/libGL.so.1
+        sudo ln -s libGL.so.1.2.0 /usr/lib/arm-linux-gnueabihf/libGL.so.1
+        echo ""
+        echo "          "'###################################'
+        echo "          "'# Linking to libGL.so.1.2.0 again #'
+        echo "          "'###################################'
+fi
+
+echo ""
+read -r -p "Press [Enter] to exit."
