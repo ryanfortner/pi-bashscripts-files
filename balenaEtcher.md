@@ -4,9 +4,15 @@ Flash OS images to removable drives (SD cards, USB sticks, SSDs, etc.)
 Project home page: https://github.com/balena-io/etcher
 
 ### Installation
+Recommended: use my apt repo:
 ```
-# Download the latest release [here](https://github.com/Itai-Nelken/Etcher-arm-32-64/releases/latest)
-sudo apt -yf install ./deb-file-here.deb
+sudo wget https://chunky-milk.github.io/balenaetcher-debs/etcher.list -O /etc/apt/sources.list.d/etcher.list
+wget -qO- https://chunky-milk.github.io/balenaetcher-debs/KEY.gpg | sudo apt-key add -
+sudo apt update && sudo apt install balena-etcher-electron -y
+```
+Alternatively, download and install the latest deb file from [here](https://github.com/Itai-Nelken/Etcher-arm-32-64/releases/latest), and install it with
+```
+sudo apt -yf install ./deb-file.deb
 ```
 
 ### Uninstallation
@@ -44,7 +50,7 @@ nvm install --lts
 ```
 git clone --recursive https://github.com/balena-io/etcher
 cd etcher
-git checkout v1.5.118
+git checkout v1.5.121
 ```
 
 3. Install Requirements  
@@ -52,9 +58,16 @@ git checkout v1.5.118
 pip install -r requirements.txt
 ```
 
-4. Setup and Install NPM Modules . 
+4. If using the Raspberry Pi 4, this step is required:
 ```
+# 2gb ram model:
+export NODE_OPTIONS="--max-old-space-size=1024"
+# 4gb ram model (or higher):
 export NODE_OPTIONS="--max-old-space-size=3072"
+```
+  
+5. Setup and Install NPM Modules
+```
 make electron-develop
 ``` 
 At this point you should be able to run a test of Etcher with -
@@ -62,7 +75,7 @@ At this point you should be able to run a test of Etcher with -
 npm start
 ```
 
-5. Patch Build Files 
+6. Patch Build Files 
 ```
 # disable tiffutil in the Makefile as this is a Mac only app and will cause the build to fail
 sed -i 's/tiffutil/#tiffutil/g' Makefile 
@@ -70,13 +83,13 @@ sed -i 's/tiffutil/#tiffutil/g' Makefile
 sed -i 's/TARGETS="deb rpm appimage"/TARGETS="deb"/g' scripts/resin/electron/build.sh
 ```
 
-6. Build and Package 
+7. Build and Package 
 ```
 # use USE_SYSTEM_FPM="true" to force the use of the installed FPM version
 USE_SYSTEM_FPM="true" make electron-build 
 ```
 
-7. Install Package 
+8. Install Package 
 ```
 #  *.deb package will be in /etcher/dist/*
 # filename will depend on which release version was checked out
