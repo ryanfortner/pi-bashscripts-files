@@ -1,5 +1,7 @@
 Spigot version
 
+only for minecraft versions 1.16.5 and lower
+
 ```
 sudo apt-get update
 sudo apt-get upgrade -y
