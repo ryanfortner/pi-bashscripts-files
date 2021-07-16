@@ -1,5 +1,5 @@
-# Box86 for Raspberry Pi
-Project home page: https://ptitseb.github.io/box86/
+# Box86 and box64 for Raspberry Pi
+Project home page: https://box86.org/
 
 Linux Userspace x86 emulator (with a twist) ;)
 
