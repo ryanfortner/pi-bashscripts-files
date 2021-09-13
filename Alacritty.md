@@ -1,7 +1,7 @@
 # Alacritty
 Alacritty is a terminal emulator which uses the GPU for rendering.
 
-### Installation and Uninstallation
+### Installation and Uninstallation (32bit only)
 Add my `raspbian-addons` repository, if you haven't already...
 ```
 https://chunky-milk.github.io/raspbian-addons/
