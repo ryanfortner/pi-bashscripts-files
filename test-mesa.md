@@ -1,5 +1,7 @@
 taken from https://github.com/jc-kynesim/rpi-ffmpeg/issues/9
 
+FOLLOW STEPS HERE FIRST: https://github.com/jc-kynesim/rpi-ffmpeg/issues/9
+
 The steps for building this ffmpeg version is found above in this thread. I will put them again on one of my git projects but probably not for a while.
 
 My notes on building latest (as of writing) Mesa are:
