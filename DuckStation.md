@@ -8,7 +8,7 @@ DuckStation is an simulator/emulator of the Sony PlayStation(TM) console, focusi
 A "BIOS" ROM image is required to to start the emulator and to play games. You can use an image from any hardware version or region, although mismatching game regions and BIOS regions may have compatibility issues. A ROM image is not provided with the emulator for legal reasons, you should dump this from your own console using Caetla or other means.
 
 ### Downloads
-Download the latest file from my automatic daily-build service [here](https://github.com/chunky-milk/autobuildservice/tree/master/duckstation). Make sure you get a BIOS and set it up per instructions [here](https://www.duckstation.org/wiki/Installation).
+Download the latest file from my automatic daily-build service [here](https://github.com/ryanfortner/autobuildservice/tree/master/duckstation). Make sure you get a BIOS and set it up per instructions [here](https://www.duckstation.org/wiki/Installation).
 
 Please note that the build files are currently only 32-bit.
 
