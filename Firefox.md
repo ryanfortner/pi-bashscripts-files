@@ -12,7 +12,7 @@ echo "deb http://ports.ubuntu.com/ubuntu-ports bionic-updates main" | sudo tee /
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 
 # Add preferences so the ubuntu repositories don't become your "default" repositories
-wget -O 99bionic-updates https://raw.githubusercontent.com/chunky-milk/pi-bashscripts-files/main/Files/99bionic-updates
+wget -O 99bionic-updates https://raw.githubusercontent.com/ryanfortner/pi-bashscripts-files/main/Files/99bionic-updates
 sudo mv 99bionic-updates /etc/apt/preferences.d/99bionic-updates
 
 # Finally, get the packages and update.
