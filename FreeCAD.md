@@ -2,14 +2,14 @@
 
 [![badge](https://github.com/Botspot/pi-apps/blob/master/icons/badge.png?raw=true)](https://github.com/Botspot/pi-apps)  
 
-## Now available in [my apt repository](https://github.com/chunky-milk/raspbian-addons).
+## Now available in [my apt repository](https://github.com/ryanfortner/raspbian-addons).
 
 FreeCAD is a free and open-source parametric modeler. 
 
 The original FreeCAD in the Raspberry Pi Foundation repositories is outdated. I've created this repository so that I can share the latest .deb file that actually works with everyone.
 
 ## Installing
-Installing is quite easy, just download the latest .deb file [here](https://github.com/chunky-milk/freecad-rpi/releases/latest) and install it using **apt**. Or, just get it on [pi-apps](https://github.com/Botspot/pi-apps/).
+Installing is quite easy, just download the latest .deb file [here](https://github.com/ryanfortner/freecad-rpi/releases/latest) and install it using **apt**. Or, just get it on [pi-apps](https://github.com/Botspot/pi-apps/).
 
 ### Compiling and Packaging
 To compile the latest FreeCAD into a .deb file for your architecture.
