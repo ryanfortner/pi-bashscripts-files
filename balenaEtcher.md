@@ -6,8 +6,8 @@ Project home page: https://github.com/balena-io/etcher
 ### Installation
 Recommended: use my apt repo:
 ```
-sudo wget https://chunky-milk.github.io/balenaetcher-debs/etcher.list -O /etc/apt/sources.list.d/etcher.list
-wget -qO- https://chunky-milk.github.io/balenaetcher-debs/KEY.gpg | sudo apt-key add -
+sudo wget https://ryanfortner.github.io/balenaetcher-debs/etcher.list -O /etc/apt/sources.list.d/etcher.list
+wget -qO- https://ryanfortner.github.io/balenaetcher-debs/KEY.gpg | sudo apt-key add -
 sudo apt update && sudo apt install balena-etcher-electron -y
 ```
 Alternatively, download and install the latest deb file from [here](https://github.com/Itai-Nelken/Etcher-arm-32-64/releases/latest), and install it with
