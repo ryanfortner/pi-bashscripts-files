@@ -8,13 +8,13 @@ Box86 lets you run x86 Linux programs (such as games) on non-x86 Linux systems, 
 ### Installation via my apt repository
 ```
 # Box86 repository
-sudo wget https://chunky-milk.github.io/box86-debs/box86.list -O /etc/apt/sources.list.d/box86.list
-wget -qO- https://chunky-milk.github.io/box86-debs/KEY.gpg | sudo apt-key add -
+sudo wget https://ryanfortner.github.io/box86-debs/box86.list -O /etc/apt/sources.list.d/box86.list
+wget -qO- https://ryanfortner.github.io/box86-debs/KEY.gpg | sudo apt-key add -
 sudo apt update && sudo apt install box86 -y
 
 # Box64 repository
-sudo wget https://chunky-milk.github.io/box64-debs/box64.list -O /etc/apt/sources.list.d/box64.list
-wget -qO- https://chunky-milk.github.io/box64-debs/KEY.gpg | sudo apt-key add -
+sudo wget https://ryanfortner.github.io/box64-debs/box64.list -O /etc/apt/sources.list.d/box64.list
+wget -qO- https://ryanfortner.github.io/box64-debs/KEY.gpg | sudo apt-key add -
 sudo apt update && sudo apt install box64 -y
 ```
 
