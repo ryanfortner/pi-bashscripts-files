@@ -1,3 +1,4 @@
+32-bit Vulkan driver compilation
 ```bash
 sudo rm -r /home/pi/mesa_vulkan
 echo 1/8 Update
