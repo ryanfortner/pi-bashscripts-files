@@ -54,3 +54,8 @@ Install gnome-software plugins
 ```
 sudo apt-get install gnome-software-plugin-flatpak gnome-software-plugin-snap -y
 ```
+
+Install add/remove software (not pi-package)
+```
+sudo apt install gnome-packagekit
+```
