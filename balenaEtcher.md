@@ -32,8 +32,7 @@ Also tested on arm64 / aarch64 Ubuntu 16.04 / 19.10
 **Build Instructions**
 1. Install build dependencies.  
 ```
-sudo apt-get install -y git python gcc g++ make libx11-dev libxkbfile-dev fakeroot rpm libsecret-1-dev jq python2.7-dev python-pip python-setuptools libudev-dev
-sudo apt-get install ruby-dev -y
+sudo apt-get install -y git python gcc g++ ruby-dev make libx11-dev libxkbfile-dev fakeroot rpm libsecret-1-dev jq python2.7-dev python-pip python-setuptools libudev-dev
 sudo gem install fpm -v 1.10.2 --no-document #note: must be v1.10.2 NOT v1.11.0
 #Install nvm manager:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash || error "Failed to install nvm!"
