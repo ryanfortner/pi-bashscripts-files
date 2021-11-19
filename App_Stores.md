@@ -29,7 +29,7 @@ wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bas
 
 Project Home Page: https://github.com/Botspot/pi-apps
 
-### Pi gnome-software Software Center
+### GNOME Software Center
 Featured in Novaspirit Tech's video [here](https://www.youtube.com/watch?v=a_q87I4EpLM&feature=youtu.be)
 **WARNING!** This will UNINSTALL pi-package (or add/remove software) from the system. Do not use this guide if you don't want pi-package removed.
 
@@ -59,3 +59,32 @@ Install add/remove software (not pi-package)
 ```
 sudo apt install gnome-packagekit
 ```
+
+### Snap Store
+Snap Store is a software center based on GNOME Software Center, but it's used for installing [snaps](https://snapcraft.io/).
+
+Project Home Page: https://snapcraft.io/snap-store
+
+To install: 
+```
+# install snapd
+sudo apt-get update && sudo apt-get install snapd -y
+
+# install snapstore
+sudo snap install snap-store
+```
+
+It's also available through Pi-Apps.
+
+### Synaptic
+Synaptic is a package manager GUI for power-users. It is included with the Raspberry Pi repositories and comes with many distributions.
+
+To install: 
+```
+# update apt lists
+sudo apt-get update
+
+# install synaptic package
+sudo apt-get install synaptic -y
+```
+Synaptic can be launched from the Main Menu, in the System Preferences part.
