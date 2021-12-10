@@ -1,61 +1,84 @@
-# [Raspbian Addons](http://raspbian-addons.github.io/)
+<p align="center">
+    <img src="https://cdn.jsdelivr.net/gh/ryanfortner/ryanfortner@main/test5.png" alt="Raspbian-Addons logo">
+</p>
 
-Legendary APT repository for packages/software that can't be found in the RPi repositories. Fully supports 32/64bit Debian Based ARM Operating Systems.
+<p align="center">
+    <img src="https://ko-fi.com/img/githubbutton_sm.svg" href="https://ko-fi.com/D1D476WQM" alt="ko-fi">
 
-Here are some examples of what this repository includes:
+<p align="center">Legendary extra APT repository for Raspberry Pies, containing open-source ARM software. Supports both 32 and 64 bit Debian-based operating systems.
+<p align="center">
+  <a href="https://docs.raspbian-addons.org/package-list">
+    View package list</a>
+  |
+  <a href="https://status.raspbian-addons.org">
+    Repository status</a>
+  |
+  <a href="https://docs.raspbian-addons.org">
+    View docs</a>
+  |
+  <a href="https://github.com/raspbian-addons/raspbian-addons/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5Bbug%5D%3A+">
+    Report an error</a>
+  |
+  <a href="https://github.com/raspbian-addons/raspbian-addons/issues/new?assignees=&labels=package+submission&template=package_submission.yaml&title=%5BPackage+submission%5D%3A+">
+    Submit a package</a>
 
-- AdoptOpenJDK 16
-- VSCodium
-- FreeCAD
-- SoftEtherVPN
-- ungoogled-chromium
-- BalenaEtcher
-- Box64
-- Box86
-- Conky Manager
-- StackEdit-nativefier
-- DuckStation emulator
-- ClamTk
-- qemu and qemu2deb
-- RPiPlay 
-- Simplenote
-- Alacritty Terminal
+<p align="center">
+    <img src="https://img.shields.io/github/stars/raspbian-addons/raspbian-addons" alt="stars">
+    <img src="https://img.shields.io/github/forks/raspbian-addons/raspbian-addons" alt="forks">
+    <img src="https://img.shields.io/github/contributors/raspbian-addons/raspbian-addons" alt="contributors">
+    <img src="https://img.shields.io/github/issues-pr/raspbian-addons/raspbian-addons" alt="prs">
+    <img src="https://img.shields.io/github/issues/raspbian-addons/raspbian-addons" alt="issues">
+    <img src="https://img.shields.io/github/license/raspbian-addons/raspbian-addons" alt="license">
 
-And more! To see a complete list, click [here](https://osdn.mirror.constant.com/storage/g/r/ra/raspbian-addons/debian/pool/).
+The Raspberry Pi is a great and capable little computer. But what frustrates me is how little effort Debian puts into their package repositories. While some software does work, other software either is extremely outdated or just may not work at all. This repository aims to fix that!
 
-# ***Installation/Uninstallation:***
+Raspbian Addons includes:
+- WebCord, an open-source Discord client
+- ExaGear Desktop, for running x86 software on your Pi!
+- VSCodium, privacy-based Visual Studio Code
+- XSnow and XPenguins, to animate penguins flying around your desktop!
+- Several unique emoji fonts
+- And more!
+    
+To see a complete list of included software, click [here](https://docs.raspbian-addons.org/package-list).
 
-Many mirrors of the repository are now available. Thanks to [**hmsjy2017**](https://github.com/hmsjy2017), the install script will ask you which mirror you would like to use.
+### **Installation/Uninstallation:**
 
-To install the repository, make sure you have an Internet connection. Install Python with `sudo apt install python3`, then run this command:
+To install the repository, make sure you have an Internet connection. Install Python with `sudo apt install python3`, then run the following command:
 
-```bash
-wget -q https://cdn.jsdelivr.net/gh/chunky-milk/raspbian-addons@master/repo.py -O repo.py; python3 repo.py; rm repo.py
+```
+python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/repo.py)
+```
+The install script will ask you which mirror you would like to use. Pick the mirror that's closest to you for the most reliable speeds. Please note that the main mirror (apt.raspbian-addons.org) may be the most up-to-date mirror.
+
+<details>
+<summary> Uninstalling the repository </summary>
+
+To ***uninstall***, execute this command. 
+```
+bash <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/uninstall.sh)
 ```
 
-To ***uninstall*** the repository, execute this command, and when asked, answer '**R**'
-```bash
-wget -q https://cdn.jsdelivr.net/gh/chunky-milk/raspbian-addons@master/repo.sh -O repo.sh; bash repo.sh; rm repo.sh
-```
+</details>
 
-### Common Issues
+[Running a repository speed test](https://docs.raspbian-addons.org/extras/speed-test/)
 
-- "This repository does not have a Release or InRelease file."
+### Want to learn more about Debian repositories?
 
-	To fix, just uninstall the repository and then re-install it using the instructions above. The format of the repository was changed on 8/22/21, due to which this error is caused.
+Click [here](https://docs.raspbian-addons.org/about/how-does-it-work/).
 
-	(Or, if you're feeling adventurous, edit the `rpirepo.list` file in /etc/apt/sources.list.d/, and ***change the ending from `raspbian-addons/debian buster main` to `raspbian-addons/debian/ /`***)
+### Troubleshooting
 
-If you're having any other issues or the methods to fix an issue listed here aren't working, be sure to open an issue report on ***this*** github repo and not on the creators of the app's repo (unless you're having an issue with a specific app).
-
-### What is the goal of this project?
-
-The Raspberry Pi is a great and capable little computer. But what frustrates me is how little effort the Raspberry Pi Foundation puts into their Debian package repositories. While some software does work, other software either is extremely outdated or just may not work at all. This repository aims to fix that, or to the best of my ability.
+See the [docs](https://docs.raspbian-addons.org/troubleshooting/common-issues/). If necessary, open an issue on the main repository.
 
 ### Would you like to help?
 
-If you'd like to help me with this, **please** contact me! Maintaining a Debian repository isn't easy work! Send me an issue report with your software request, and I can add it for you.
+If you'd like to help me with this, contact me! Maintaining a Debian repository isn't easy work! Send me an issue report with your software request, and I can add it for you.
 
-Current Maintainers: [**@chunky-milk**](https://github.com/chunky-milk) [**@Itai-Nelken**](https://github.com/Itai-Nelken/) [**@hmsjy2017**](https://github.com/hmsjy2017)
+Current Maintainers: [**@ryanfortner**](https://github.com/ryanfortner) [**@hmsjy2017**](https://github.com/hmsjy2017) [**@Itai-Nelken**](https://github.com/Itai-Nelken/)
 
 Old repository archive: An older backup of the repository is [here](https://archive.org/download/old-repo-archive/old-repo-archive.zip). It is fully functional and is there in case the existing repository becomes broken and unusable.
+
+### Special Thanks
+
+Thanks to [Fosshost](https://fosshost.org/) for providing VPS services for the repository, and to OSDN and SourceForge for the [mirrors](https://github.com/raspbian-addons/mirrors)! Raspbian Addons would not be possible without these services.
