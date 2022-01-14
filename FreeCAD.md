@@ -35,7 +35,7 @@ rm 0.19.3.tar.gz
 
 # Compile source code
 mkdir freecad-build && cd freecad-build
-cmake ../FreeCAD-0.19.3 -DBUILD_QT5=ON -DPYTHON_EXECUTABLE=/usr/bin/python3 -DUSE_PYBIND11=ON
+cmake ../FreeCAD-0.19.3 -DBUILD_QT5=ON -DPYTHON_EXECUTABLE=/usr/bin/python3.9 -DPYTHON_INCLUDE_DIR=/usr/include/python3.9 -DPYTHON_LIBRARY=/usr/lib/arm-linux-gnueabihf/libpython3.9.so  -DPYTHON_PACKAGES_PATH=/usr/local/lib/python3.9/dist-packages/ -DUSE_PYBIND11=ON
 make -j4
 
 # Create .deb package with checkinstall (make sure to switch the versions)
@@ -64,7 +64,7 @@ rm 0.19.3.tar.gz
 
 # Compile source code
 mkdir freecad-build && cd freecad-build
-cmake ../FreeCAD-0.19.3 -DBUILD_QT5=ON -DPYTHON_EXECUTABLE=/usr/bin/python3 -DUSE_PYBIND11=ON
+cmake ../FreeCAD-0.19.3 -DBUILD_QT5=ON -DPYTHON_EXECUTABLE=/usr/bin/python3.9 -DPYTHON_INCLUDE_DIR=/usr/include/python3.9 -DPYTHON_LIBRARY=/usr/lib/arm-linux-gnueabihf/libpython3.9.so  -DPYTHON_PACKAGES_PATH=/usr/local/lib/python3.9/dist-packages/ -DUSE_PYBIND11=ON
 make -j4
 
 # Create .deb package with CheckInstall (make sure to switch the versions)
