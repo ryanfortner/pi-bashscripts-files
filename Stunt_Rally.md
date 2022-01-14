@@ -2,7 +2,7 @@
 
 ```
 sudo apt install git -y
-sudo apt install build-essential -y
+sudo apt install build-essential cmake -y
 sudo apt install libboost-wave-dev -y
 sudo apt install libboost-system-dev -y
 sudo apt install libboost-filesystem-dev -y
