@@ -4,20 +4,19 @@ Flash OS images to removable drives (SD cards, USB sticks, SSDs, etc.)
 Project home page: https://github.com/balena-io/etcher
 
 ### Installation
-Recommended: use my apt repo:
+Recommended: use my [Raspbian Addons](https://raspbian-addons.org/) repo:
 ```
-sudo wget https://ryanfortner.github.io/balenaetcher-debs/etcher.list -O /etc/apt/sources.list.d/etcher.list
-wget -qO- https://ryanfortner.github.io/balenaetcher-debs/KEY.gpg | sudo apt-key add -
-sudo apt update && sudo apt install balena-etcher-electron -y
+python3 <(curl -fSsL https://scripts.raspbian-addons.org/utils/repo.py)
+sudo apt install balena-etcher-electron
 ```
 Alternatively, download and install the latest deb file from [here](https://github.com/Itai-Nelken/Etcher-arm-32-64/releases/latest), and install it with
 ```
-sudo apt -yf install ./deb-file.deb
+sudo apt -f install ./deb-file.deb
 ```
 
 ### Uninstallation
 ```
-sudo apt purge balena-etcher-electron -y
+sudo apt purge balena-etcher-electron
 ```
 
 <details>
@@ -40,7 +39,7 @@ sudo apt-get install -y nodejs
 ```
 git clone --recursive https://github.com/balena-io/etcher
 cd etcher
-git checkout v1.7.3
+git checkout v1.7.7
 ```
 
 3. Install Requirements  
