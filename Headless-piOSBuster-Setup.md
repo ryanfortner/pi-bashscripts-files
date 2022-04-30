@@ -1,4 +1,4 @@
-# Headless RPi setup
+# Headless piOS Buster setup
 
 In the `boot` partition of a newly-flashed drive of RPi OS:
 
