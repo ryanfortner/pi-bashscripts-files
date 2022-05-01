@@ -39,7 +39,7 @@ sudo apt-get install -y nodejs
 ```
 git clone --recursive https://github.com/balena-io/etcher
 cd etcher
-git checkout v1.7.8
+git checkout v1.7.9
 ```
 
 3. Install Requirements  
